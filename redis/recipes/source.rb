@@ -104,6 +104,6 @@ if node['redis']['source']['create_service']
     group   "root"
     mode    "0644"
 
-    notifies :restart, "service[redis]"
+    notifies :restart, "service[redis-server]"
   end
 end
